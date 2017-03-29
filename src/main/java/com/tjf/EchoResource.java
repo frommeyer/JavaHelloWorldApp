@@ -209,7 +209,7 @@ public class EchoResource {
 			else if(param.equalsIgnoreCase("LEN") == true) //length of a string
 			{
 				retVal = this.lengthOfString(msg.getMessage());
-				msg.setMessage(retVal);
+				msg.setMessage(retVal+"hi fro");
 			}
 			else
 			{
