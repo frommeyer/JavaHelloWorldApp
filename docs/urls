@@ -1,0 +1,42 @@
+GET: https://javaechoserver.mybluemix.net/resources/echos
+Content-Type: application/json
+Accept: application/json
+
+POST: https://javaechoserver.mybluemix.net/resources/echos/12321
+Content-Type: application/json
+Accept: application/json
+{
+"messageId": "1232183",
+"message": "Hi world"
+}
+
+Cloudant API Key (echo_messages_db)
+Key: chaderharthundstalkingst
+Password: 85249dcf1278b4e18b6178229f4cff8863566d75
+
+user: 48bf69da-8e5e-4751-bec2-44afc39e5ae6-bluemix
+
+Cloudant VCAP
+{
+    "cloudantNoSQLDB": [
+        {
+            "credentials": {
+                "username": "48bf69da-8e5e-4751-bec2-44afc39e5ae6-bluemix",
+                "password": "956f47b780d2fa05e2839a1fb56448f2049160780c86f9f566d3c80ecd2f918c",
+                "host": "48bf69da-8e5e-4751-bec2-44afc39e5ae6-bluemix.cloudant.com",
+                "port": 443,
+                "url": "https://48bf69da-8e5e-4751-bec2-44afc39e5ae6-bluemix:956f47b780d2fa05e2839a1fb56448f2049160780c86f9f566d3c80ecd2f918c@48bf69da-8e5e-4751-bec2-44afc39e5ae6-bluemix.cloudant.com"
+            },
+            "syslog_drain_url": null,
+            "label": "cloudantNoSQLDB",
+            "provider": null,
+            "plan": "Shared",
+            "name": "Cloudant NoSQL DB-e5",
+            "tags": [
+                "data_management",
+                "ibm_created",
+                "ibm_dedicated_public"
+            ]
+        }
+    ]
+}
