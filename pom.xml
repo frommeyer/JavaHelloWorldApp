@@ -47,6 +47,19 @@
       		<artifactId>cloudant-client</artifactId> 
       		<version>2.5.1</version>
     	</dependency>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		/dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs</artifactId>
+			<version>1.4</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/javax.ws.rs.jar</systemPath>
+		</dependency>
     </dependencies>
 
     <build>
