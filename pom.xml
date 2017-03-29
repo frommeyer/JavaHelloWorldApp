@@ -58,7 +58,7 @@
 			<artifactId>javax.ws.rs</artifactId>
 			<version>1.4</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/javax.ws.rs.jar</systemPath>
+			<systemPath>${basedir}/lib/javax.ws.rs-api.jar</systemPath>
 		</dependency>
     </dependencies>
 
