@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="build" name="JavaHelloWorldApp">
 
-  <property name="compiler" value="javac1.8" />
-  <property name="build.compiler" value="javac1.8" />
+  <property file="build.properties"/>
+
   <property name="debuglevel" value="source,lines,vars" />
   <property name="target" value="1.5" />
   <property name="source" value="1.5" />
@@ -51,6 +51,7 @@
       <src path="src" />
     	<classpath>
 	      	<pathelement path="${classpathDir}"/>
+			<pathelement location="${env.JAVA_HOME}"/common/servlet-api.jar"/>
 	      	<fileset dir="lib">
 	      	  <include name="**/*.jar"/>
 	      	</fileset>
