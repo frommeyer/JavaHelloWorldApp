@@ -51,7 +51,7 @@
       <src path="src" />
     	<classpath>
 	      	<pathelement path="${classpathDir}"/>
-			<pathelement location="${env.JAVA_HOME}"/common/servlet-api.jar"/>
+			<pathelement location="${env.JAVA_HOME}/common/servlet-api.jar"/>
 	      	<fileset dir="lib">
 	      	  <include name="**/*.jar"/>
 	      	</fileset>
