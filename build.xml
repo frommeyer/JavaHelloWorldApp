@@ -24,7 +24,7 @@
         <exclude name="**/*.java" />
       </fileset>
     </copy>
-    <copy includeemptydirs="true" todir="bin">
+    <copy includeemptydirs="false" todir="bin">
       <fileset dir="WebContent" />
     </copy>
 	<echo message="Copy files to ${artifact_dir} for deployment"/>
