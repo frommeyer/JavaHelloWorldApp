@@ -19,6 +19,7 @@
   
   <target name="init">
     <mkdir dir="bin" />
+	<mkdir dir="WebContent" />
     <copy includeemptydirs="false" todir="bin">
       <fileset dir="src">
         <exclude name="**/*.java" />
