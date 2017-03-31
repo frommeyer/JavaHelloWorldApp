@@ -9,7 +9,6 @@
   <property name="warname" value="${ant.project.name}.war" />
   <property environment="env"/>
   <property name="artifact_dir" value="target"/>
-    <!-------Your comment----->
   <!-- <condition property="artifact_dir" value="${env.ARCHIVE_DIR}" else="."> -->
     <!-- <isset property="env.ARCHIVE_DIR" /> -->
   <!-- </condition> -->
