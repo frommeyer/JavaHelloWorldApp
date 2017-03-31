@@ -46,7 +46,7 @@
   
   <target name="build-project" depends="init">
     <echo message="${ant.project.name}: ${ant.file}" />
-    <javac verbose="true" debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+    <javac verbose="true" compiler="javac1.8" debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
       <src path="src" />
     	<classpath>
 	      	<pathelement path="${classpathDir}"/>
