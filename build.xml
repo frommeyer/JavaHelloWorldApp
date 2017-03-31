@@ -8,7 +8,7 @@
   <property name="source" value="1.5" />
   <property name="warname" value="${ant.project.name}.war" />
   <property environment="env"/>
-  <condition property="artifact_dir" value="${env.ARCHIVE_DIR}" else="target">
+  <condition property="artifact_dir" value="${env.ARCHIVE_DIR}" else=".">
     <isset property="env.ARCHIVE_DIR" />
   </condition>
   <condition property="RTCBuildResultUUID" value="${env.RTCBuildResultUUID}">
@@ -22,7 +22,6 @@
   <target name="init">
     <mkdir dir="bin" />
 	<mkdir dir="WebContent" />
-	<mkdir dir="target" />
     <copy includeemptydirs="false" todir="bin">
       <fileset dir="src">
         <exclude name="**/*.java" />
