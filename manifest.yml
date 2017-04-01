@@ -7,4 +7,5 @@ applications:
   host: javaechoserver
   disk_quota: 1024M
   services:
+  - API Connect-q7
   - Cloudant NoSQL DB-e5
