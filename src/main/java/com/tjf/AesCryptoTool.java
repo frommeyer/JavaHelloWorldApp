@@ -55,7 +55,7 @@ public class AesCryptoTool {
 			//this.setKey(secret);
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
-			//retVal = Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
+			retVal = Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
 		} 
 		catch (Exception e) 
 		{
@@ -74,7 +74,7 @@ public class AesCryptoTool {
 		{
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
 			cipher.init(Cipher.DECRYPT_MODE, secretKey);
-			//retVal = new String(cipher.doFinal(Base64.getDecoder().decode(strToDecrypt)));
+			retVal = new String(cipher.doFinal(Base64.getDecoder().decode(strToDecrypt)));
 		} 
 		catch (Exception e) 
 		{
