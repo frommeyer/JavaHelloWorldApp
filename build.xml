@@ -59,7 +59,7 @@
   </target>
   
   <target name="build-war" depends="build-project">
-    <war destfile="${artifact_dir}/${warname}" basedir="bin" needxmlfile="false" />
+    <war verbose="true" destfile="${artifact_dir}/${warname}" basedir="bin" needxmlfile="false" />
   </target>
 
   
