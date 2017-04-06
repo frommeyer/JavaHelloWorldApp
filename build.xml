@@ -1,4 +1,4 @@
-<project name="JavaHelloWorldApp" basedir=".." default="install">
+<project name="JavaHelloWorldApp" basedir="." default="install">
 
     <!-- project-specific variables -->
     <property name="jsp.dir.name" value="JavaHelloWorldApp" />
