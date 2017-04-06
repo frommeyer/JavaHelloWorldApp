@@ -48,6 +48,7 @@
         <mkdir dir="${temp.dir.meta-inf}" />
         <mkdir dir="${temp.dir.web-inf}" />
         <mkdir dir="${temp.dir.classes}" />
+		<mkdir dir="${temp.dir.images}" />
     </target>
 
     <!-- COMPILE -->
@@ -65,8 +66,19 @@
     <target name="package" depends="compile">
       <echo>=== PACKAGE ===</echo>
      
-      <!-- copy the config files (I removed on April 6, 2017; reinsert here) -->
-
+      <!-- copy the config files (I removed some on April 6, 2017; reinsert here) -->
+	  <copy file="target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" tofile="${temp.dir.meta-inf}/MANIFEST.MF" overwrite="true" />
+      <copy todir="${temp.dir}">
+        <fileset dir="src/main/webapp">
+          <include name="**/*"/>
+        </fileset>
+      </copy>
+      <copy todir="${temp.dir}/images">
+        <fileset dir="src/main/webapp/images">
+          <include name="**/*"/>
+        </fileset>
+      </copy>
+	  
       <copy todir="${temp.dir.classes}">
         <fileset dir="${src.dir}">
           <include name="**/*.xml"/>
@@ -86,7 +98,6 @@
     <!-- JUST DEPLOY THE JSP's (without rebuilding the entire project) -->
     <target name="jsps">
       <echo>=== DEPLOY JSP'S ===</echo>
-      <!-- i am trying to be explicit about what i put out there -->
       <copy todir="${webapp.dir}/${jsp.dir.name}">
         <fileset dir="${pages.dir}">
           <include name="**/*.jsp"/>
