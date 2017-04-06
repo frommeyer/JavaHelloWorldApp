@@ -100,6 +100,9 @@
       </copy>
     </target>	
 	
-    <!-- April 6, 2017; INSTALL (I removed on April 6, 2017; reinsert here)-->
-
+    <!-- INSTALL -->
+	<target name="install" depends="package">
+      <echo>=== INSTALL ===</echo>
+      <!-- April 6, 2017; <copy file="${package.file}" tofile="${webapp.dir}/${package.name}"  overwrite="true" />  -->
+    </target>
 </project>
