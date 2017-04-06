@@ -67,14 +67,14 @@
       <echo>=== PACKAGE ===</echo>
      
       <!-- copy the config files (I removed some on April 6, 2017; reinsert here) -->
-	  <copy file="target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" tofile="${temp.dir.meta-inf}/MANIFEST.MF" overwrite="true" />
+	  <copy file="./target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" tofile="${temp.dir.meta-inf}/MANIFEST.MF" overwrite="true" />
       <copy todir="${temp.dir}">
-        <fileset dir="src/main/webapp">
+        <fileset dir="./src/main/webapp">
           <include name="**/*"/>
         </fileset>
       </copy>
       <copy todir="${temp.dir}/images">
-        <fileset dir="src/main/webapp/images">
+        <fileset dir="./src/main/webapp/images">
           <include name="**/*"/>
         </fileset>
       </copy>
