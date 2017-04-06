@@ -14,7 +14,7 @@
     <property name="src.dir" value="src" />
     <property name="src.tests.dir" value="src-tests" />
     <property name="resources.dir" value="resources" />
-    <property name="dest.dir" value="target" />
+    <property name="dest.dir" value="mytarget" />
 
     <!-- put everything in a temp folder with the right structure during the build -->
     <property name="temp.dir" value="temp" />
