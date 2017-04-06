@@ -57,6 +57,7 @@
         <javac debug="on" srcdir="${src.dir}" destdir="${temp.dir.classes}" includes="**/*">
             <classpath refid="build.class.path" />
         </javac>
+    </target>
 
     <!-- PACKAGE -->
     <target name="package" depends="compile">
