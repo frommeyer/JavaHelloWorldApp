@@ -57,17 +57,15 @@
         <javac debug="on" srcdir="${src.dir}" destdir="${temp.dir.classes}" includes="**/*">
             <classpath refid="build.class.path" />
         </javac>
+		
+		<!-- compile files on the src-tests path (I removed on April 6, 2017; reinsert here)-->
     </target>
 
     <!-- PACKAGE -->
     <target name="package" depends="compile">
       <echo>=== PACKAGE ===</echo>
      
-      <!-- copy the config files -->
-      <copy file="${resources.dir}/MANIFEST.MF" tofile="${temp.dir.meta-inf}/MANIFEST.MF" overwrite="true" />
-      <copy file="${resources.dir}/web.xml" tofile="${temp.dir.web-inf}/web.xml" overwrite="true" />
-      <copy file="${resources.dir}/managed-beans.xml" tofile="${temp.dir.web-inf}/managed-beans.xml" overwrite="true" />
-      <copy file="${resources.dir}/navigation-rules.xml" tofile="${temp.dir.web-inf}/navigation-rules.xml" overwrite="true" />
+      <!-- copy the config files (I removed on April 6, 2017; reinsert here) -->
 
       <copy todir="${temp.dir.classes}">
         <fileset dir="${src.dir}">
