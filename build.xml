@@ -76,7 +76,7 @@
     	
       <!-- the ant war task. with all resources in place, create the war file -->
 	  <!-- April 6, 2017; <war destfile="${package.file}" webxml="${temp.dir.web-inf}/web.xml" basedir="${temp.dir}"> -->
-      <war destfile="${package.file}" basedir="${temp.dir}" needxmlfile='false'>
+      <war destfile="${package.file}" basedir="${temp.dir}" needxmlfile='false'> <!-- April 6, 2017 added needxmlfile -->
         <!-- April 6, 2017; <fileset dir="${pages.dir}"/> -->
         <lib dir="${lib.dir}" />
         <classes dir="${temp.dir.classes}" />
@@ -100,9 +100,6 @@
       </copy>
     </target>	
 	
-    <!-- INSTALL -->
-	<target name="install" depends="package">
-      <echo>=== INSTALL ===</echo>
-      <copy file="${package.file}" tofile="${webapp.dir}/${package.name}" overwrite="true" />
-    </target>
+    <!-- April 6, 2017; INSTALL (I removed on April 6, 2017; reinsert here)-->
+
 </project>
