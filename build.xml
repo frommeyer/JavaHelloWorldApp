@@ -86,7 +86,7 @@
     <!-- JUST DEPLOY THE JSP's (without rebuilding the entire project) -->
     <target name="jsps">
       <echo>=== DEPLOY JSP'S ===</echo>
-      <!-- i'm trying to be explicit about what i put out there -->
+      <!-- i am trying to be explicit about what i put out there -->
       <copy todir="${webapp.dir}/${jsp.dir.name}">
         <fileset dir="${pages.dir}">
           <include name="**/*.jsp"/>
