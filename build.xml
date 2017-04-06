@@ -78,7 +78,12 @@
           <include name="**/*"/>
         </fileset>
       </copy>
-	  
+	  <!-- I added the following COPY on April 6, 2017 -->
+      <copy todir="${temp.dir}/lib">
+        <fileset dir="./lib">
+          <include name="**/*.jar"/>
+        </fileset>
+      </copy>	  
       <copy todir="${temp.dir.classes}">
         <fileset dir="${src.dir}">
           <include name="**/*.xml"/>
