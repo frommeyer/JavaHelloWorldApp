@@ -32,7 +32,7 @@
     </path>
 
     <target name="clean">
-        <delete>
+        <delete failonerror="false">
             <fileset dir="${dest.dir}" includes="**/*"/>
         </delete>
         <delete dir="${temp.dir}" />
