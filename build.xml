@@ -47,6 +47,7 @@
         <mkdir dir="${temp.dir.lib}" />
         <mkdir dir="${temp.dir.meta-inf}" />
         <mkdir dir="${temp.dir.web-inf}" />
+		<mkdir dir="${temp.dir.web-inf}/lib" /> <!-- I added April 6, 2017 -->
         <mkdir dir="${temp.dir.classes}" />
 		<mkdir dir="${temp.dir.images}" />
     </target>
@@ -79,7 +80,7 @@
         </fileset>
       </copy>
 	  <!-- I added the following COPY on April 6, 2017 -->
-      <copy todir="${temp.dir}/lib">
+      <copy todir="${temp.dir.web-inf}/lib">
         <fileset dir="./lib">
           <include name="**/*.jar"/>
         </fileset>
