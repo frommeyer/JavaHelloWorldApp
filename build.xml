@@ -58,13 +58,7 @@
             <classpath refid="build.class.path" />
         </javac>
 
-<!-- compile files on the src-tests path 
-        <echo>Compiling ${src.tests.dir} files ...</echo>
-        <javac debug="on" srcdir="${src.tests.dir}" destdir="${temp.dir.classes}" includes="com/**">
-            <classpath refid="build.class.path" />
-        </javac>
-    </target>
--->
+
     <!-- PACKAGE -->
     <target name="package" depends="compile">
       <echo>=== PACKAGE ===</echo>
